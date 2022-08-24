@@ -5,6 +5,7 @@ import "./home.css";
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
 
 export default function Home() {
   const [posts, setPosts] = useState([]);
@@ -24,6 +25,7 @@ export default function Home() {
         <Posts posts={posts} />
         <Sidebar />
       </div>
+      <Footer />
     </>
   );
 }

@@ -14,22 +14,22 @@ export default function TopBar() {
     <div div className="top">
       <div className="topLeft">
         <div>
-          <a href="https://www.facebook.com/pucding3102/">
+          <a href="https://www.facebook.com/pucding3102/" target={"_blank"}>
             <i className="sidebarIcon fa-brands fa-square-facebook"> </i>
           </a>
         </div>
         <div>
-          <a href="https://twitter.com/pudding31_02">
+          <a href="https://twitter.com/pudding31_02" target={"_blank"}>
             <i className="sidebarIcon fa-brands fa-square-twitter"> </i>
           </a>
         </div>
         <div>
-          <a href="https://www.pinterest.com/phucdinhtrong1/">
+          <a href="https://www.pinterest.com/phucdinhtrong1/" target={"_blank"}>
             <i className="sidebarIcon fa-brands fa-square-pinterest"> </i>
           </a>
         </div>
         <div>
-          <a href="https://www.instagram.com/pudding31.02/">
+          <a href="https://www.instagram.com/pudding31.02/" target={"_blank"}>
             <i className="sidebarIcon fa-brands fa-square-instagram"> </i>
           </a>
         </div>
@@ -42,12 +42,12 @@ export default function TopBar() {
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to={"/"}>
+            <Link className="link" to={"/about"}>
               ABOUT
             </Link>
           </li>
           <li className="topListItem">
-            <Link className="link" to={"/"}>
+            <Link className="link" to={"/contact"}>
               CONTACT
             </Link>
           </li>

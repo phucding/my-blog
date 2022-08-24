@@ -9,6 +9,8 @@ import { Routes } from "react-router-dom";
 import React, { useContext } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Context } from "./context/Context";
+import Contact from "./components/contact/Contact";
+import About from "./pages/about/About";
 
 function App() {
   const { user } = useContext(Context);
@@ -17,11 +19,13 @@ function App() {
       <TopBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
         <Route path="/register" element={user ? <Home /> : <Register />} />
         <Route path="/login" element={user ? <Home /> : <Login />} />
         <Route path="/write" element={user ? <Write /> : <Register />} />
         <Route path="/settings" element={user ? <Settings /> : <Register />} />
         <Route path="/post/:postId" element={<Single />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );

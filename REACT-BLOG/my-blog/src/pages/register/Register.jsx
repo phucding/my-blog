@@ -7,7 +7,7 @@ export default function Register() {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("false");
+  const [error, setError] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -61,7 +61,7 @@ export default function Register() {
       </button>
       {error && (
         <span style={{ color: "red", marginTop: "10px" }}>
-          Something went wrong!
+          Đăng kí không thành công
         </span>
       )}
     </div>
